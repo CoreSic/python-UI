@@ -15,8 +15,9 @@ e2.grid(row=1,column=1,padx=10,pady=5)
 def show():
     print("帐号 :%s" % e1.get())          # get 变量内容 
     print("密码 :%s" % e2.get())
- 
-Button(root,text='确定',width=10,command=show).grid(row=3,column=0,sticky=W,padx=10,pady=5)  # 设置 button 指定 宽度 , 并且 关联 函数 , 使用表格式布局 . 
-Button(root,text='取消',width=10,command=root.quit).grid(row=3,column=1,sticky=E,padx=10,pady=5)
+
+Button(root,text='取消',width=10,command=root.quit).grid(row=3,column=0,sticky=W,padx=10,pady=5) 
+Button(root,text='确定',width=10,command=show).grid(row=3,column=1,sticky=E,padx=10,pady=5)  # 设置 button 指定 宽度 , 并且 关联 函数 , 使用表格式布局 . 
+
 
 mainloop()
